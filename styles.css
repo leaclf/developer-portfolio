@@ -209,10 +209,9 @@ span#close::before {
   }
 }
 .About-me {
-  column-count: 2;
+  display: grid;
   background-color: rgb(46, 48, 56);
   padding: var(--page-mpadding);
-  border-radius: 12px;
   margin: 4rem 0;
 }
 .about__header {
@@ -234,7 +233,6 @@ span#close::before {
   .About-me {
     box-shadow: 0 0 0 100vmax rgb(45, 48, 56);
     clip-path: inset(0 -100vmax);
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
@@ -251,14 +249,9 @@ span#close::before {
   color: var(--body-text);
   margin-top: 0;
 }
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) {
   .contact {
     padding: var(--page-tpadding);
-  }
-}
-@media (min-width: 930px) {
-  .contact {
-    padding: 0;
   }
 }
 footer {
@@ -267,8 +260,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 .footer-site-name {
   font-size: 1rem;
@@ -285,8 +276,7 @@ footer {
 }
 @media (min-width: 930px) {
   footer {
-    margin: 0 -3rem;
-    padding-left: calc(var(--page-dpadding) + 1rem);
-    padding-right: calc(var(--page-dpadding) + 1rem);
+    box-shadow: 0 0 0 100vmax rgb(45, 48, 56);
+    clip-path: inset(0 -100vmax);
   }
 }
