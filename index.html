@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="site-name">
+                <span>Leac Life</span>
+            </div>
+            <div class="top-menu">
+                <a href="javascript:void(0)" class="hamburger" onclick="myFunction()">
+                    <img src="Hamburger Menu.svg" alt="">
+                </a>
+            </div>
+            <div class="top-nav" id="top_nav">
+                <span id="close"></span>
+                <ul>
+                    <li><a href="#" class="top-nav__link">Articles</a></li>
+                    <li><a href="#" class="top-nav__link">Chats</a></li>
+                    <li><a href="#" class="top-nav__link">Awards</a></li>
+                    <li><a href="#" class="top-nav__link">About</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <button class="btn">Get in touch</button>
+            </div>
+        </header>
+        <main>
+            <div class="introduction">
+                <h1 class="introduction__header">Helping companies build better, scalable software</h1>
+                <p class="introduction__career">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    reprehenderit eaque qui animi pariatur vitae odio a incidunt laudantium culpa!</p>
+                <article class="company-list">
+                    <img src="Logos/Walmart.svg" alt="">
+                    <img src="Logos/JP Morgan.svg" alt="">
+                    <img src="Logos/Visa.svg" alt="">
+                    <img src="Logos/Tinder.svg" alt="">
+                    <img src="Logos/Samsung.svg" alt="">
+                    <img src="Logos/Verizon.svg" alt="">
+                </article>
+            </div>
+            <section class="project">
+                <article>
+                    <img src="Spense.png" alt="" class="project__image">
+                    <h2 class="project__header">Spense.com</h2>
+                    <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at
+                        eveniet
+                        assumenda laboriosam modi odit omnis amet, sed sequi odio error dolorum voluptate delectus
+                        eligendi.
+                    </p>
+                </article>
+                <article>
+                    <img src="YelpCamp.png" alt="" class="project__image">
+                    <h2 class="project__header">YelpCamp.com</h2>
+                    <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at
+                        eveniet
+                        assumenda laboriosam modi odit omnis amet, sed sequi odio error dolorum voluptate delectus
+                        eligendi.
+                    </p>
+                </article>
+            </section>
+            <section class="About-me">
+                <div class="group__one">
+                    <h2 class="about__header">A co-founder at one of the world's largest communities</h2>
+                    <p class="about__content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem aspernatur dolore nulla
+                        porro
+                        ipsam rerum similique quod, consequatur deserunt quae laboriosam, veritatis officia illum
+                        tempora.
+                    </p>
+                    <p class="about__content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id nesciunt temporibus excepturi
+                        ad
+                        laudantium facere in animi fugiat quo. A in sunt dolor excepturi!
+                    </p>
+                </div>
+                <div class="group__two">
+                    <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex
+                        tempora
+                        saepe
+                        necessitatibus sapiente ut.</p>
+                    <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="about__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut facilis
+                        tempore
+                        numquam dolorem vel, consectetur nobis voluptatibus minima deserunt nesciunt illo tempora quis,
+                        commodi
+                        facere soluta aliquam ducimus provident! Assumenda!</p>
+                    <p class="about__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                        perspiciatis
+                        at nobis.</p>
+                </div>
+            </section>
+            <div class="contact">
+                <h2 class="contact__header">Interested in working with me ?</h2>
+                <p class="contact__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium molestias doloremque!
+                    Velit, sint sed?
+                </p>
+                <button class="btn">Get in touch</button>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-site-name">
+                <p>Leac Life</p>
+            </div>
+            <div class="social-link">
+                <a href="http://twitter.com/ileaeac" target="_blank" rel="noopener noreferrer"><img
+                        src="Social Icons/Twitter.svg" alt=""></a>
+                <a href="http://linkedin.com/leaclf" target="_blank" rel="noopener noreferrer"><img
+                        src="Social Icons/LinkedIn.svg" alt=""></a>
+                <a href="http://github.com/leaclf" target="_blank" rel="noopener noreferrer"><img
+                        src="Social Icons/Github.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("top_nav");
+            var y = document.getElementById('close');
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            y.addEventListener('click', function (event) {
+                event.preventDefault();
+                x.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
